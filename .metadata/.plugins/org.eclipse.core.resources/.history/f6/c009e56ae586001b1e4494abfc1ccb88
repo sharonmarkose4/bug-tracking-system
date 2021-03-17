@@ -1,0 +1,15 @@
+package com.ibm;
+
+public class Developer extends Employee {
+	void analyseBug() {
+		System.out.println("analysed");
+	}
+	void statusBug() {
+		System.out.println("status set");
+	}
+	void bugReport() {
+		
+	}	System.out.println("bug reported");
+	
+
+}

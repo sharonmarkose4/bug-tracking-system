@@ -1,0 +1,21 @@
+package com.ibm;
+
+public class Tester extends Employee{
+	public Tester(String name, int id) {
+		super(name, id);
+		// TODO Auto-generated constructor stub
+	}
+	void analyseBug(Bug bug) {
+		System.out.println("analysed");
+		statusBug(bug);
+	}
+	void statusBug(Bug bug) {
+		bug.setStatus(STATUS.VERIFIED);
+//		System.out.println("status set");
+		System.out.println(bug.getStatus());
+	}
+	void BugReport() {
+		System.out.println("bug reported");
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.ibm;
+
+public class Manager extends Employee {
+	void assign()
+	{
+		System.out.println("assigned bug to developer");
+	}
+	void acknowledgeReport() {
+		System.out.println("acknowledged report");
+	}
+}

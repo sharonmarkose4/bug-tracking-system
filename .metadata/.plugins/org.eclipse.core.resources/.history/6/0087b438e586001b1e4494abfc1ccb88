@@ -1,0 +1,11 @@
+package com.ibm;
+
+public class Manager extends Employee {
+	void assign()
+	{
+		
+	}
+	void acknowledgeReport() {
+		
+	}
+}
