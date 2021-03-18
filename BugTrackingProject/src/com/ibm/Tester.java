@@ -8,10 +8,10 @@ public class Tester extends Employee {
 
 	void analyseBug(Bug bug) {
 		System.out.println(" tester analyse bug...");// Tester analyze bugs
-		statusBug(bug);// sets status after analyzing
+		setStatusBug(bug);// sets status after analyzing
 	}
 
-	void statusBug(Bug bug) {
+	void setStatusBug(Bug bug) {
 		bug.setStatus(STATUS.PENDING_RETEST);
 		System.out.println("status set: " + bug.getStatus());
 		bug.setStatus(STATUS.VERIFIED);

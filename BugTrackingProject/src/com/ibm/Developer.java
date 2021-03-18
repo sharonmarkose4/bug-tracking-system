@@ -7,18 +7,23 @@ public class Developer extends Employee {
 
 	void analyseBug(Bug bug) {
 		System.out.println("developer analyse bug....");// developer analyzes the bug
-		statusBug(bug);//developer updates status
+		setStatusBug(bug);//developer updates status
 	}
 
-	void statusBug(Bug bug) {
+	STATUS setStatusBug(Bug bug) {
 		bug.setStatus(STATUS.OPEN);
 		System.out.println("status set: " + bug.getStatus());
 		if (bug.getPriority() == PRIORITY.LOW) {
 			bug.setStatus(STATUS.DEFERRED);
-		} else {
+		} 
+		else {
 			bug.setStatus(STATUS.FIXED);
-			System.out.println("status set: " + bug.getStatus());
+			System.out.println("status set: "+bug.getStatus());
+//			bug.setStatus(STATUS.VERIFIED);
+//			
+//			System.out.println("status set: " + bug.getStatus());
 		}
+		return (bug.getStatus());
 
 	}
 
